@@ -12,6 +12,8 @@
   --fondo: #ffffff;
   --gris-claro: #f5f5f5;
   --negro: #000000;
+  --connect-advisor:#ff6fd8;
+  --connect-advisor-rgb:255, 111, 216; 
 }
 
 /* 2. Reset / base */
@@ -33,6 +35,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 0.5rem;
+  height: 4vh;
 }
 
 /* 4. Header y nav */
@@ -40,8 +43,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   background: var(--negro);
+  height: 6vh;
 }
 
 .header .logo img {
@@ -52,7 +56,7 @@ body {
 
 .nav ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -67,24 +71,53 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-checkbox ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 1rem;
 }
 
 /* 5. Secciones principales */
 .palette {
   flex: 1;
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
+.checkbox {
+  background-color: transparent;
+  color: var(--texto);
+  border: none;
+  padding: 0.3rem 0.3rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.checkbox:hover {
+  background-color: rgba(var(--connect-advisor-rgb), 0.2);
+}
+
 .buttons {
   background-color: transparent;
   color: var(--texto);
   border: none;
-  padding: 0.6rem 1.2rem;
+  padding: 0.3rem 1.2rem;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.buttons:hover {
+  background-color: rgba(var(--connect-advisor-rgb), 0.2);
+}
+
 .color {
   flex: 1;
   display: flex;
@@ -134,9 +167,15 @@ body {
 @media (max-width: 600px) {
   .header {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
   }
-
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    height: auto;
+  }
   .header .logo img {
     height: 36px;
   }
