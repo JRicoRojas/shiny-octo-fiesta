@@ -6,18 +6,19 @@
   <title>Paleta de colores</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./js/script.js">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="hero">
     <a href="index.html" class="logo">
       <img src="./img/Connect-Advisor-1.png" alt="Logo de Connect Advisor">
     </a>
     <nav class="nav">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#aside">Popular Colors</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -62,12 +63,12 @@
           <p>#FD7E14</p>
         </div>
       </section> 
-    <article class="article">
+    <article class="article" id="about">
       <h2>Acerca de la paleta de colores</h2>
       <p>La paleta de colores es una herramienta esencial para diseñadores y artistas. Permite seleccionar y combinar colores de manera efectiva para crear armonía visual en proyectos creativos.</p>
     </article>
 
-    <aside class="aside">
+    <aside class="aside" id="aside">
       <h2>Colores populares</h2>
       <ul>
         <li>Red: #FF5733</li>
@@ -80,7 +81,7 @@
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <address>
       <p>123 Calle Principal, Ciudad, País</p>
       <p>Teléfono: +1 234 567 890</p>
